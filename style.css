@@ -1,4 +1,5 @@
 :root {
+	--dark-Gray: hsl(0, 0%, 63%);
 	--black: hsl(0, 0%, 0%);
 	--white: hsl(0, 0%, 100%);
 	--very-dark-gray: hsl(0, 0%, 27%);
@@ -10,4 +11,156 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Spartan', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+	.container {
+		flex-direction: column;
+		width: 350px;
+	}
+}
+
+.box {
+	background-image: url(./images/desktop-image-hero-1.jpg);
+	flex: 1;
+	/* width: 65%; */
+	background-size: cover;
+	/* min-height: 60rem; */
+	background-repeat: no-repeat;
+}
+
+/* * NAV-BAR */
+.header {
+	margin-top: 5rem;
+	margin-left: 5rem;
+}
+.box__nav-bar {
+	display: flex;
+	align-items: center;
+}
+
+.box__list {
+	display: flex;
+	margin-left: 4rem;
+	/* align-items: center; */
+}
+
+.box__item {
+	list-style: none;
+	color: var(--white);
+	font-size: 1.6rem;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.box__item:hover {
+	border-bottom: 1px solid var(--white);
+}
+
+.box__item:not(:last-child) {
+	margin-right: 3rem;
+}
+
+/* * CAJA-2 */
+.cajas {
+	flex: 0 1 20%;
+}
+.caja {
+	margin: 10rem 10rem 5rem 10rem;
+	width: 48rem;
+}
+
+.box__heading {
+	font-size: 4.3rem;
+}
+
+.box__text {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	margin: 3rem 0;
+	padding-right: 0rem;
+	margin-right: 2rem;
+	color: var(--dark-Gray);
+}
+
+.box__btn {
+	display: inline-block;
+	letter-spacing: 1rem;
+	text-decoration: none;
+	color: var(--black);
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+
+.box__arrow {
+	margin-left: 2rem;
+}
+
+.arrows {
+	background-color: black;
+	width: 26.2rem;
+	height: 9rem;
+	display: flex;
+}
+
+.flex {
+	background-image: url(./images/image-about-dark.jpg);
+	flex-basis: 29%;
+	height: 27rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.flex-2 {
+	background-image: url(./images/image-about-light.jpg);
+	flex-basis: 29%;
+
+	height: 27rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about {
+	flex: 1;
+	padding: 6rem 4rem;
+}
+
+.about__heading {
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	margin-bottom: 2rem;
+	font-size: 1.1rem;
+}
+
+.about__text {
+	color: var(--dark-Gray);
+	font-size: 1.3rem;
+	line-height: 2.5rem;
+}
+
+.arrow__left,
+.arrow__right {
+	flex: 0 0 50%;
+	align-self: stretch;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.arrow__left:hover,
+.arrow__right:hover {
+	background-color: var(--very-dark-gray);
 }
