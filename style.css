@@ -86,6 +86,7 @@ body {
 
 .box__heading {
 	font-size: 3.6rem;
+	padding-right: 9rem;
 }
 
 .box__text {
@@ -174,13 +175,14 @@ body {
 	background-color: var(--very-dark-gray);
 }
 
-.hidden {
+/* .hidden-3 {
 	display: none;
-}
+} */
 
+.hidden-3,
 .hidden-2 {
 	display: none;
 }
-.hidden-text {
+.hidden {
 	display: none;
 }
