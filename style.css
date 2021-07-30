@@ -29,8 +29,8 @@ body {
 
 @media (max-width: 500px) {
 	.container {
+		display: flex;
 		flex-direction: column;
-		width: 350px;
 	}
 }
 
@@ -172,4 +172,15 @@ body {
 .arrow__left:hover,
 .arrow__right:hover {
 	background-color: var(--very-dark-gray);
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden-2 {
+	display: none;
+}
+.hidden-text {
+	display: none;
 }
